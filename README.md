@@ -1,6 +1,6 @@
 # [Puzzle Game](https://coderanwar.github.io/puzzle-game/)
 # [Base Conversion](https://coderanwar.github.io/base-conversion/)
-# [Preposition] (https://coderanwar.github.io/preposition/)
+# [Preposition](https://coderanwar.github.io/preposition/)
 
 ## Welcome to GitHub Pages
 
