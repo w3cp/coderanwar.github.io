@@ -349,6 +349,9 @@ void setNumber() {
 
 
 void checkNumber() {
+  if (EEPROM.read(0) == 0) { // if already suspended
+    return;
+  } 
   while (1) {
     sim.println("AT+CPBS=\"SM\""); // SET PHONEBOOK STORAGE TO SIM
     delay(50);
@@ -390,8 +393,6 @@ void checkNumber() {
         delay(10000);
         // to this line
 
-      } else if (EEPROM.read(0) == 0) { // if already suspended
-        Serial.println("Number is right [matched], but suspended before");
       } else {
         EEPROM.update(0, 1);
         Serial.println("Number is right. [matched]");
