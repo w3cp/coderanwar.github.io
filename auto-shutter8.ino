@@ -58,7 +58,7 @@ const int led[] = {9, 12, A0, A1, A2, A3};
 #define signalLoad 7
 #define signalUnload 8
 
-String motorName[6] = {"Elevator>", "FrontGear>", "Loader  >", "Blower   >", "Jhorna  >", "Gate     >"};
+String motorName[6] = {"Elevator>", "Con Gear>", "Loader  >", "Blower   >", "Jhorna  >", "Gate     >"};
 int totalLed = 6;
 
 const int duration = 5000;
@@ -191,9 +191,9 @@ void loop() {
           motorOnOff(0);
       } else {
           lcd.clear();
-          lcd.print("Nothing to close.");
+          lcd.print("Nothing to close");
           lcd.setCursor(1, 2);
-          lcd.print("[+8801736106218]");
+          lcd.print("<><><><><>");
       }
     }
   } else {
