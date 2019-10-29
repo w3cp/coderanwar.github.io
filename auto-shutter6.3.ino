@@ -134,13 +134,13 @@ void loop() {
      msg  = sim.readString();
 
      // this portion is added for rare case (in case of suspend accidentaly)
-     if (msg.indexOf("+CPBF:")!=-1) {
+     /*if (msg.indexOf("+CPBF:")!=-1) {
        if (msg.indexOf(BUILT_IN_CONTACT_NUMBER)!=-1) {
          EEPROM.update(0, 1);
          showAd();
          Serial.println("Number is right. [matched]");
        }
-     }
+     }*/
 
      Serial.println(msg);
 
