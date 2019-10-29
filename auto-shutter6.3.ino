@@ -98,6 +98,8 @@ void setup() {
   lcd.print("Checking System ...");
   lcd.setCursor(0, 1);
   lcd.print("Please wait");
+  
+  Serial.println("Checking Number ... Please wait");
 
   checkNumber();
 
